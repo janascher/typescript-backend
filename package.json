@@ -1,0 +1,33 @@
+{
+  "name": "estudando-typescript-backend",
+  "version": "1.0.0",
+  "description": "Atividades das aulas de TypeScript da Alpha EdTech.",
+  "main": "./build/index.js",
+  "scripts": {
+    "dev": "webpack --watch",
+    "build": "webpack --mode=production --node-env=production",
+    "build:dev": "webpack --mode=development",
+    "build:prod": "webpack --mode=production --node-env=production",
+    "serve": "webpack serve",
+    "watch": "webpack --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janascher/typescript-backend.git"
+  },
+  "author": "Janaína Scher",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/janascher/typescript-backend/issues"
+  },
+  "homepage": "https://github.com/janascher/typescript-backend#readme",
+  "devDependencies": {
+    "@webpack-cli/generators": "^2.5.0",
+    "typescript": "^4.8.4",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "ts-loader": "^9.4.1"
+  }
+}
