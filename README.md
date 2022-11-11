@@ -18,7 +18,36 @@ Criar um novo projeto seguindo estes passos:
 2. Inicialize o webpack
 3. Configure o webpack
 4. Compile seu código typescript com `webpack` para JS;
+
+OBS: para o backend não se usa webpack.
 ---
+
+### Aula 06 - Backend - Parte 1
+Criar um novo projeto seguindo estes passos:
+
+1. Instalar as **dependências**:
+    - express;
+    - uuid;
+    - bcrypt;
+    - dotenv;
+    - cors;
+    - cookie-parser.
+2. Instalar as **devDependencies**:
+    - Typescript
+        - @types/node;
+        - @types/express;
+        - @types/cors ;
+        - @types/dotenv;
+        - @types/uuid ;
+        - @types/cookie-parser.
+    - Demais:
+		- nodemon;
+		- concurrently.
+3. Crie no Postgres um **database** chamado “**db_typescript**” e nele uma tabela chamada “**accounts**” com:
+    - id, email, name e password;
+	- Observação: adicionei um arquivo chamado "database.png" para que seja possível a visualização de como ficou o item 3 no PgAdmin.
+4. Aplique os comandos e códigos necessário para levantar seu servidor na porta **8000**;
+5. **Compile** seu código typescript para JS.
 
 ## 🔗 Referências básicas 
 
