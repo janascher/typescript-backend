@@ -1,11 +1,7 @@
-import { RegUserData } from './../models/index';
-import { Request, Response } from 'express';
-import { v4 as uuid } from 'uuid';
-import { UserData } from '../models';
+import { homeController } from './home-controller';
+import { generateUUID } from './uuid-controller';
+import { getUser } from './get-users';
+import { createUser } from './create-users';
+import { updateUser } from './update-users';
 
-export function takeUUID(req: Request, res: Response) {
-    const userData: UserData = req.body;
-    const regUserData: RegUserData = { ...userData, id: uuid() };
-
-    return res.json(regUserData);
-}
+export { homeController, generateUUID, getUser, createUser, updateUser };

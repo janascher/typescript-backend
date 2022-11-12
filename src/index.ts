@@ -1,6 +1,6 @@
 import dotenv from 'dotenv';
 import { App } from './app';
-import { PORT } from './configs/port';
+import { PORT } from './configs/index';
 
 dotenv.config();
 

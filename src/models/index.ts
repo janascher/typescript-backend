@@ -1,9 +1,14 @@
-export interface UserData {
+export interface IAPIResponse<T> {
+    data: T;
+    errors: Array<string>;
+}
+
+export interface IUserData {
     name: string;
     email: string;
     password: string;
 }
 
-export interface RegUserData extends UserData {
+export interface IRegUserData extends IUserData {
     id: string,
 }

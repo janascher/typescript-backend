@@ -6,6 +6,8 @@ export class App {
 
     constructor() {
         this.app = express();
+        this.app.use(express.urlencoded({ extended: true}));
+        
         this.app.use(router);
     }
 }
