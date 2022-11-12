@@ -18,8 +18,8 @@ Criar um novo projeto seguindo estes passos:
 2. Inicialize o webpack
 3. Configure o webpack
 4. Compile seu código typescript com `webpack` para JS;
+Observação: para o backend não se usa webpack.
 
-OBS: para o backend não se usa webpack.
 ---
 
 ### Aula 06 - Backend - Parte 1
@@ -49,12 +49,49 @@ Criar um novo projeto seguindo estes passos:
 4. Aplique os comandos e códigos necessário para levantar seu servidor na porta **8000**;
 5. **Compile** seu código typescript para JS.
 
+---
+
+### 🚧 Aula 06 - Backend - Parte 2 🚧
+Usar o projeto da lição anterior seguindo estes passos:
+Os **regex** necessários serão:
+1. email: /^(\w{1,}@\w{1,}\.(\w{3})(\.\w{2}){0,1})$/gim 
+2. password :/^\w{1,}$/gim
+3. name: /^[a-z]{1,}$/gim
+- Assim como validamos nossos dados de entrada na lição passada(no frontend), você deve criar os **validators** para necessários cada dado recebido;
+- Crie uma rota de **criação de usuários**, você deve utilizar os conceitos de **classe** e **regex** aprendidos até aqui para a validação.
+    - **Nesta lição não é necessário processar os dados recebidos, apenas retornar os dados esperados.**
+    - As rotas devem ser:
+        1. **Cadastro** POST: “/accounts/”
+            1. Recebe: email, name e password;
+            2. Retorna: id, email, name;
+        2. **Login** POST: “/accounts/login”
+            1. Recebe: email e password;
+            2. Retorna: id;
+            3. Cookie: token = sessionID
+        3. **Update** PATCH ~~(autenticada)~~: “/accounts/”
+            1. Recebe: email, name e/ou password;
+            2. Retorna: id, email, name; 
+- **Compile** seu código typescript para JS.
+
 ## 🔗 Referências básicas 
 
 - [Introduction | webpack](https://webpack.js.org/api/)
 - [Command Line Interface | webpack](https://webpack.js.org/api/cli/#init)
 - [TypeScript | webpack](https://webpack.js.org/guides/typescript/)
 - [Using webpack with TypeScript - LogRocket Blog](https://blog.logrocket.com/using-webpack-typescript/)
+- [TypeScript: Documentation - Utility Types (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/utility-types.html#partialtype)
+- [TypeScript promise type | Learn How does TypeScript Promise type work? (educba.com)](https://www.educba.com/typescript-promise-type/)
+- [TypeScript: Documentation - Everyday Types (typescriptlang.org)](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#arrays)
+- [uuid - npm (npmjs.com)](https://www.npmjs.com/package/uuid)
+- [Como usar o TypeScript no back-end? – Acervo Lima](https://acervolima.com/como-usar-o-typescript-no-back-end/)
+- [Como usar TypeScript com NodeJs e express - Aprenda agora! (vidafullstack.com.br)](https://vidafullstack.com.br/javascript/como-usar-typescript-com-nodejs-e-express/)
+
+## 🔗 Referências avançadas
+
+- [Como usar TypeScript com NodeJs e express - YouTube](https://www.youtube.com/watch?v=r_wyef7ZK2g)
+- [SOLID fica FÁCIL com Essas Ilustrações - YouTube](https://www.youtube.com/watch?v=6SfrO3D4dHM)
+- [SOLID (O básico para você programar melhor) // Dicionário do Programador - YouTube](https://www.youtube.com/watch?v=mkx0CdWiPRA)
+- [Princípios SOLID em uma API REST com Node.js e TypeScript | Code/Drops #44 - YouTube](https://www.youtube.com/watch?v=vAV4Vy4jfkc&t=12s)
 
 ## 🦸 Autor  
 
